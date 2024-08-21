@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Encriptador</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+
+   <header>
+      <img class="logo" src="img/logo.png" alt="Logo">
+      <h1>Encriptador de texto</h1>
+   </header>
+
+   <main>
+
+      <section class="entrada-text">
+        
+         <textarea id="text_area1" autofocus required class="text-area"  cols="30" rows="10"  placeholder="Ingrese el texto aqui" ></textarea>
+        
+         <div>
+            <h6 class="informacion">Las letras mayúsculas serán cambiadas a minúsculas y los acentos serán eliminados.</h6>
+         </div>
+         
+         <div class="botones" disabled>
+            <button   id="btn-encriptar" class="btn-encriptar" disabled onclick="btnEncriptar()" >Encriptar</button>
+            <button id="btn-desencriptar" class="btn-desencriptar" disabled onclick="btnDesencriptar()">Desencriptar</button>
+
+         </div>   
+         
+      </section>
+
+      <section class="salida-text">
+         <div class="area-resultado">
+            <img class="robot" src="img/robot.png" alt="robot">
+           
+            <h2>Ningun mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desea encriptar o desencriptar</p>
+         </div>
+      
+         <div class="resultado ver-texto">
+            <h2>Este es tu resultado 👇</h2>
+            <p id="msg" class="texto-mostrado"></p>
+            <img class="imagen"  src="/img/robot1.png" alt="Robot escudo">
+            <img class="imagen1" src="/img/robot2 .png" alt="Robot Desencriptacion">
+            
+            <button class="btn-copiar" onclick="copia()">copiar</button>
+         </div>           
+
+      </section>
+
+   </main>
+
+   <footer class="footer">
+      <a href="https://www.linkedin.com/in/gabriel-cardenas-web/"><img class="link" src="/img/lnk.png" alt="linkelin"></a>
+      <a href="https://github.com/GabyWeb"><img class="git" src="/img/github.png" alt="github"></a>
+      <p>© Derechos reservados Gabriel Cardenas/aluraLatam</p>
+   </footer>
+
+
+</body>
+
+<script src="/script.js"></script>
+
+</html>
